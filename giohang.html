@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/giohang.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lo.css">
+    <link rel="icon" href="image/logo-title.png" type="imge/x-icon"/>
+    <title>Tiệm bánh bất ổn </title>
+</head>
+<body>
+    <div class="container-xxl position-relative p-0 ">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-top shadow-sm  "> 
+            <a href="" class="navbar-brand p-0">
+                    <img src="image/logo2.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="doan.html" class="nav-item nav-link ">Trang chủ </a>
+                    <a href="#" class="nav-item nav-link">Chi tiết </a>
+                    <a href="#" class="nav-item nav-link">Dịch vụ</a>
+                    <a href="#sanpham" class="nav-item nav-link">Sản phẩm</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tư vấn</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="team.html" class="dropdown-item">Cách đặt bánh</a>
+                            <a href="doan.html" class="dropdown-item">Phản hồi</a>
+                            <a href="doan.html" class="dropdown-item">liên lạc</a>
+                        </div>
+                    </div>
+                </div>
+                <butaton type="button" class="btn text-dark ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                <a href="thanhtoan.html" class="btn btn-success text-light rounded-pill py-2 px-4 ms-3">Thanh toán<i class=" text-center fa fa-cart-plus" style="margin-left: 10px;"></i></a>
+            </div>
+        </nav>
+        <div class="modal fade" id="searchModal" tabindex="-1">
+          <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
+                  <div class="modal-header border-0">
+                      <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-flex align-items-center justify-content-center">
+                      <div class="input-group" style="max-width: 600px;">
+                          <input type="text" class="form-control bg-transparent border-light p-3 text-light" placeholder="Tìm kiếm nhanh ">
+                          <button class="btn btn-light px-4 " ><i class="fa fa-search"></i></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- menu end -->
+    
+            <!-- sản phẩm  -->
+             <main>
+            <header class="container ">
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="section-title">
+                                    <h2>Giỏ hàng của bạn</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <h2 class="count" >tổng số  </h2>
+            </header>
+
+        <section class="container">
+            <ul class="products">
+                <!-- Sản phẩm thêm vào 1  -->
+                <li class="row">
+                    <div class="col left">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="" class="img-fluid" alt="" />
+                            </a>
+                        </div>
+                        <div class="detail">
+                            <div class="name"><a href="#"></a></div>
+                            <div class="description">
+                                
+                            </div>
+                            <div class="price"></div>
+                        </div>
+                    </div>
+
+                    <div class="col right">
+                        <div class="quantity">
+                            <input type="number" class="quantity" step="1" value="2" />
+                        </div>
+
+                        <div class="remove">
+                            <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Sản phẩm thêm vào 2  -->
+
+                <!-- Sản phẩm thêm vào 3 -->
+
+    
+
+
+        </section>
+
+        <section class="option-container container cuoihoadon">
+            <!-- Mã giảm giá -->
+            <div class="promotion">
+                <label for="promo-code"><a target="_blank" href="https://wheelofnames.com/vi/xkk-af4">Nhận voucher giảm giá tâị đây</a></label>
+                <input type="text" id="promo-code" autocomplete="off"placeholder="VD:A OR B " />
+                <button type="button" ></button>
+            </div>
+
+            <!-- Tổng tiền -->
+            <div class="summary">
+                <ul>
+                    <li class="subtotal">Subtotal <span></span></li>
+                        <li class="vat">VAT<span></span></li>
+                    <li class="discount hide">Discount<span></span></li>
+                    <li class="total text-dark">Total <span></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+            <!-- sản phẩm  -->
+</section>
+      <footer >
+        <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" >
+          <div class="container py-5 px-lg-5">
+              <div class="row g-5">
+                  <div class="col-md-6 col-lg-3">
+                    <img src="image/logo2.png" alt="Logo" class="img-fluid">
+                      <p><i class="fa fa-map">  </i> 15 Trần Văn Trà, Khu đô thị Phú Mỹ Hưng, Phường Tân Phú, Quận 7, Tp Hồ Chí Minh</p>
+                      <p><i class="fa fa-phone-square me-3"></i>091 6666164</p>
+                      <p><i class="fa fa-envelope me-3"></i>daotao@ctim.edu.v</p>
+                      <div class="d-flex pt-2">
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                         
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="text-white mb-4">Liên lạc</h5>
+                      <a class="btn btn-link" href="">Tìm hiểu về cửa hàng</a>
+                      <a class="btn btn-link" href="">Liên lạc</a>
+                      <a class="btn btn-link" href="">Góp ý </a>
+                      <a class="btn btn-link" href="">Trao đổi </a>
+                      <a class="btn btn-link" href="">Dịch vụ</a>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="text-white mb-4">Thu thập sticker đổi ngay voucher </h5>
+                      <div class="row g-2">
+                          <div class="col-4">
+                              <img class="img-fluid" src="image/sticker voucher/apple-pie.png"Image">
+                          </div>
+                          <div class="col-4">
+                              <img class="img-fluid" src="image/sticker voucher/pancake.png" alt="Image">
+                          </div>
+                          <div class="col-4">
+                              <img class="img-fluid" src="image/sticker voucher/bread.png" alt="Image">
+                          </div>
+                          <div class="col-4">
+                              <img class="img-fluid" src="image/sticker voucher/cake.png" alt="Image">
+                          </div>
+                          <div class="col-4">
+                              <img class="img-fluid" src="image/sticker voucher/cupcake.png" alt="Image">
+                          </div>
+                          <div class="col-4">
+                              <img class="img-fluid" src="image/sticker voucher/pudding.png" alt="Image">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h5 class="text-white mb-4">Voucher liền tay </h5>
+                      <p>Nhập ngay email của bạn để được ngay voucher </p>
+                      <div class="position-relative  mt-3">
+                          <input class="form-control border-0 rounded-pill  ps-4 pe-5" type="email" placeholder="Nhập email bạn tại đây" style="height: 48px;">
+                          <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"></button>
+                      </div>
+                  </div>
+              </div>
+              <div class="row border-top" style="margin-top: 20px;"><br>
+                <div class="col-md-12 text-center copyright"><span >Design by <a href="" class="text-center text-danger">Thanh Phát </a> & <a href="" class="text-danger">Minh Thông</a></span></div>
+              </div> 
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/giohang.js"></script>
+</body>
+</html>

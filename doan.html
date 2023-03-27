@@ -1,0 +1,597 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo-title.png" type="imge/x-icon"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/lo.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Tiệm bánh bất ổn </title>
+</head>
+<body>
+    <!-- menu -->
+        <div class="container-xxl position-relative p-0 ">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-top shadow-sm  "> 
+                <a href="" class="navbar-brand p-0">
+                    <img src="image/logo2.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="doan.html" class="nav-item nav-link ">Trang chủ </a>
+                        <a href="#quan" class="nav-item nav-link">Chi tiết </a>
+                        <a href="#" class="nav-item nav-link">Dịch vụ</a>
+                        <a href="sanpham.html" class="nav-item nav-link">Sản phẩm</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tư vấn</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#voucher3" class="dropdown-item">Voucher ưu đãi</a>
+                                <a href="#phanhoikhach" class="dropdown-item">Phản hồi</a>
+                                <a href="#" class="dropdown-item">liên lạc</a>
+                            </div>
+                        </div>
+                    </div>
+                    <butaton type="button" class="btn text-dark ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                    <a href="dangnhap.html" class="btn btn-success text-light rounded-pill py-2 px-4 ms-3">Đăng nhập<i class=" text-center fa fa-user" style="margin-left: 10px;"></i></a>
+                </div>
+            </nav>
+            <div class="modal fade" id="searchModal" tabindex="-1">
+              <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
+                      <div class="modal-header border-0">
+                          <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body d-flex align-items-center justify-content-center">
+                          <div class="input-group" style="max-width: 600px;">
+                              <input type="text" class="form-control bg-transparent border-light p-3 text-light" placeholder="Tìm kiếm nhanh  sản phẩm ">
+                              <button class="btn btn-light px-4 " ><i class="fa fa-search"></i></button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- menu end -->
+        <!-- Giới thiệu đầu  -->
+      <div id="carouselExampleCaptions" class="carousel slide ">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner trang">
+          <div class="carousel-item active trang1">
+            <img src="image/backroundmoi2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption trang2 ">
+              <h5 class="animate__animated animate__backInDown text-light">Nguồn nguyên liệu</h5>
+              <p class="animate__animated animate__backInDown">Luôn luôn kiểm định đảm bảo sức khỏe người dùng</p>
+            </div>
+          </div>
+          <div class="carousel-item trang1">
+            <img src="image/nen1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption trang2 ">
+              <h5 class="animate__animated animate__backInDown text-light">Đội ngũ làm bánh nhiều năm kinh nghiệm</h5>
+              <p class="animate__animated animate__backInDown">Đem đến hương vị nguyên bản của bánh </p>
+            </div>
+          </div>
+          <div class="carousel-item trang1">
+            <img src="image/backroudmoi.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption trang2">
+              <h5 class="animate__animated animate__backInDown text-light">Tìm hiểu cách làm bánh </h5>
+              <p class="animate__animated animate__backInDown">Hỗ trợ người tiêu dùng khi có nhu cầu học làm bánh </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- End -->
+      <!-- Giỏi thiệu sơ quán -->
+      <div class="container-xxl py-5" >
+        <div class="container"id="quan">
+          <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" >
+              <p><span class="text-dark me-2">#</span>Chào mừng bạn đã tới TIệm Bánh Bất Ổn</p>
+              <h1 class="display-5 mb-4">
+                Tiệm bánh này có gì đặc biệt
+                <span class="text-light btn btn-success">Tìm hiểu ngay</span>
+              </h1>
+              <p class="mb-4">
+                <span class="text-warning">Tiệm Bánh Bất Ổn</span> được ra đời với thông điệp mang đam mê của chúng tôi gửi gắm đến bạn qua những chiếc bánh ngọt và thức uống ngon, giá rẻ, vệ sinh và chất lượng luôn được đặt lên hàng đầu. Sự ra đời của mỗi chiếc bánh đều được chọn lọc kỹ lưỡng tâm huyết của đội ngũ chúng tôi từ khâu nguyên liệu, chế biến để khi đến tay của các bạn, chúng đều trở thành sản phẩm hoàn hảo nhất.
+              </p>
+              <h5 class="mb-3">
+                <i class="far fa-check-circle text-success me-3"></i>
+                Giữ xe an toàn
+              </h5>
+              <h5 class="mb-3">
+                <i class="far fa-check-circle text-success me-3"></i>
+               Không gian yên tĩnh 
+              </h5>
+              <h5 class="mb-3">
+                <i class="far fa-check-circle text-success me-3"></i>
+                Chất lượng bánh được kiểm định
+              </h5>
+              <h5 class="mb-3">
+                <i class="far fa-check-circle text-success me-3"></i>
+                Cùng nhau học làm bánh 
+              </h5>
+              <a class="btn btn-success py-3 px-5 mt-3" href="#hoclambanh">Học làm bánh ngay !</a>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="img-border">
+                <img class="img-fluid" src="image/giothieu.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Giỏi thiệu sơ quán end -->
+<!-- Sản phẩm  -->
+      <section class="featured spad" id="sanpham">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Sản phẩm chúng tôi</h2>
+                    </div>
+                    <div class="featured__controls">
+                        <ul>
+                            <li class="active" data-filter="*">Các loại bánh luôn có tại tiệm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="css/image/anh1.jpg" style="background-image: url('image/banh1.jpg');">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="giohang.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <img src="css/" alt="">
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Cup cake ngọc trai </a></h6>
+                            <h5 class="btn btn-danger">30.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" style="background-image: url('image/banh2.jpg');">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="giohang.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Bánh mỳ bơ tỏi</a></h6>
+                            <h5 class="btn btn-danger">50.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" style="background-image: url('image/banh3-1.jpg');">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="giohang.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Cup cake dâu tằm</a></h6>
+                            <h5 class="btn btn-danger">30.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" style="background-image: url('image/banh3.jpg');">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="giohang.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Cup cake nguyên dâu</a></h6>
+                            <h5 class="btn btn-danger">30.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" style="background-image: url('image/banh4.jpg');">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="giohang.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Cup cake việt quất</a></h6>
+                            <h5 class="btn btn-danger">30.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" style="background-image: url('image/banhduajpg.jpg');">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="giohang.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Bánh dừa đậu phộng</a></h6>
+                            <h5 class="btn btn-danger">70.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" style="background-image: url('image/banh-dừa-coconut-cake-recipe-main-photo.jpg');">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="giohang.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Bánh dừa phô mai</a></h6>
+                            <h5 class="btn btn-danger">70.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" style="background-image: url('image/banh5.jpg');">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="giohang.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Bánh bông lan việt quất và mâm xôi</a></h6>
+                            <h5 class="btn btn-danger">30.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" style="background-image: url('image/banh6.jpg');">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="giohang.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Bánh bông lan phô mai pudding</a></h6>
+                            <h5 class="btn btn-danger">50.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" style="background-image: url('image/banh7.jpg');">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="giohang.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Bánh tart Hawai</a></h6>
+                            <h5 class="btn btn-danger">50.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" style="background-image: url('image/banh8.jpg');">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="giohang.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Bánh tart dâu tây</a></h6>
+                            <h5 class="btn btn-danger">50.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" style="background-image: url('image/banh9.jpg');">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="giohang.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Bánh kem trái cây</a></h6>
+                            <h5 class="btn btn-danger">100.000 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Sản phẩm hết -->
+
+    <!-- Voucher giảm  -->
+    <div class="banner" id="voucher3">
+        <section>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Nhanh tay nhận voucher ngay</h2>
+                    </div>
+                    <div class="featured__controls">
+                        <ul>
+                            <li class="active" data-filter="*">Khuyến mãi dành cho tháng 3 này </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="image/Voucher1.png" alt="" style="max-width: 100% ;">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="image/Birthday Cakes  Pastries - Made with PosterMyWall (2).jpg" alt="" style="max-width: 80%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hết voucher -->
+    <!-- Phản hòi khách hàng  -->
+    <div class="row review">
+        <div class="col-lg-12 ">
+            <div class="section-title">
+                <h2>Những góp ý của khách hàng </h2>
+            </div>
+            <div class="featured__controls">
+                <ul>
+                    <li class="active" data-filter="*">Chúng tôi luôn lắng nghe và cải thiện từ khách hàng  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-12 phanhoi1">
+              <figure class="snip1192">
+                <blockquote>Tôi cảm thấy rất tuyệt khi dùng bánh ở nơi đây.Bánh tart là một trong những bánh tôi yêu thích, nhưng khác ở chiếc bánh tart trước đây tôi ăn này là được làm từ những nguyên liệu hảo hạng, tuyển chọn kỹ tạo nên hương vị này</blockquote>
+                <div class="author">
+                  <img src="image/phanhoi1.png" alt="ý kiến 1 "  class="card-img"/>
+                  <h5 class="text-danger">Thái Thông <span> Sinh viên</span></h5>
+                </div>
+              </figure>
+            </div>
+            <div class="col-md-4 col-12 phanhoi1">
+              <figure class="snip1192">
+                <blockquote>Bánh cup cake này mình từng ăn thử rồi, mình tất thích ăn vị mâm xôi nên thấy bánh này là mua về ăn ngay. Chỉ mới khui hộp ra là cảm nhận được hương mâm xôi rồi, cắt ra thì nhân bên trong rất dẻo, vỏ rất mỏng ăn vào tan ngay trong miệng</blockquote>
+                <div class="author">
+                  <img src="image/phanhoi.jpg" alt="ý kiến 2" class="card-img"/>
+                  <h5 class="text-danger">Hana<span>Nội trợ</span></h5>
+                </div>
+              </figure>
+            </div>
+            <div class="col-md-4  col-12 phanhoi1">
+              <figure class="snip1192">
+                <blockquote>Không gian thật tuyệt cho một người thích đọc sách và cần không gian thư giãn riêng tư như tôi. Các loại bánh ở đây như khiến cho tôi rới vào thế giới ngọt ngòa như trong cổ tích vậy chúng thật tuyệt và tôi sẽ ủng hộ quán trong thời gian tới </blockquote>
+                <div class="author">
+                  <img src="image/phanhoidacbiet.jpg" alt="ý kiến 3"  class="card-img"/>
+                  <h5 class="text-danger">Thanh Phát<span>Sinh viên  </span></h5>
+                </div>
+              </figure>
+            </div>
+           
+        </div>
+    </div>
+    <!-- Hết phản hồi khách hàng  -->
+    <!-- điền phản hồi -->
+    <!-- Ý kiến khách  --> 
+        <div class="thongtin" id="phanhoikhach">
+        <div class="full">
+        <div class="container full1">
+            <div class="text">Hãy để lại cảm nhận của bạn ở đây</div>
+            <form action="#">
+               <div class="form-row">
+                  <div class="input-data">
+                     <input type="text" required>
+                     <div class="underline"></div>
+                     <label for="">Họ </label>
+                  </div>
+                  <div class="input-data">
+                     <input type="text" required>
+                     <div class="underline"></div>
+                     <label for="">Tên </label>
+                  </div>
+               </div>
+               <div class="form-row">
+                  <div class="input-data">
+                     <input type="email" required>
+                     <div class="underline"></div>
+                     <label for="">Địa chỉa email</label>
+                  </div>
+                  <div class="input-data">
+                     <input type="text" required placeholder="VD: chất lượng bánh  " >
+                     <div class="underline"></div>
+                     <label for="">Chi tiết góp ý </label>
+                  </div>
+               </div>
+               <div class="form-row">
+                  <div class="input-data textarea">
+                     <textarea rows="8" cols="80" required></textarea>
+                     <br />
+                     <div class="underline"></div>
+                     <label for="">Nội dung góp ý </label>
+                     <br />
+                     <div class="form-row submit-btn">
+                        <div class="input-data">
+                           <div class="inner"></div>
+                           <input type="submit" value="Gửi ngay">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+        </div>
+      </div>
+    <!-- điền phản hồi end -->
+    <!-- học làm bánh neww -->
+    <section class="from-blog spad" id="hoclambanh">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title from-blog__title">
+                        <h2>Bí quyết làm bánh và hỗ trợ người dùng Tháng 3  </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="image/dan1.jpg" alt="" class="img-fluid anh1" >
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-download"></i> 500 lượt tải </li>
+                                <li><i class="fa fa-comment-o"></i> 70</li>
+                            </ul>
+                            <h5><a target="_blank" href="https://kokotaru.com/cach-lam-banh-tart-chanh-qua-mam-xoi/">Cách làm bánh Tart mâm xôi tại nhà</a></h5>
+                            <p>Tìm hiểu các thợ làm bánh đã làm ra các loại bánh Tart như thế nào ? </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="image/dan2.jpg" alt="" class="img-fluid anh1" >
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-download"></i> 233 lượt tải </li>
+                                <li><i class="fa fa-comment-o"></i> 50</li>
+                            </ul>
+                            <h5><a href="https://vn.alongwalker.co/j?#top-26-mon-diem-tam-sang-nhanh-chong-va-tien-loi-nhat-s309337.html" target="_blank">Điểm tâm sáng dành riêng cho tháng 3 này</a></h5>
+                            <p>Thời tiết vô cùng nóng nực hãy cùng Tiệm Bánh Bất Ổn khám phá ngay Top 10 loại bánh dành cho điểm tâm sáng  </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="image/dan3.jpg" alt="" class="img-fluid anh1">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-download"></i> 1000 lượt tải </li>
+                                <li><i class="fa fa-comment-o"></i> 534</li>
+                            </ul>
+                            <h5><a target="_blank" href="https://saigonhoa.com/15-meo-hay-khi-trong-rau-tai-nha-ban-nen-biet/">Sở hữu cho gia đình 1 trang trại xanh ngay tại nhà  </a></h5>
+                            <p>Trang trại xanh hiện nay vô cùng phổ biến có lợi cho sức khỏe người tiêu dùng hiện nay </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end học làm bánh  -->
+    <!-- phần kết  -->
+     <footer>
+<div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" style="height: auto;">
+  <div class="container py-5 px-lg-5">
+      <div class="row g-5">
+          <div class="col-md-6 col-lg-3">
+            <img src="image/logo2.png" alt="Logo" class="img-fluid">
+              <p><i class="fa fa-map">  </i> 15 Trần Văn Trà, Khu đô thị Phú Mỹ Hưng, Phường Tân Phú, Quận 7, Tp Hồ Chí Minh</p>
+              <p><i class="fa fa-phone-square me-3"></i>091 6666164</p>
+              <p><i class="fa fa-envelope me-3"></i>daotao@ctim.edu.v</p>
+              <div class="d-flex pt-2">
+                  <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                  <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                 
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <h5 class="text-white mb-4">Liên lạc</h5>
+              <a class="btn btn-link" href="">Tìm hiểu về cửa hàng</a>
+              <a class="btn btn-link" href="">Liên lạc</a>
+              <a class="btn btn-link" href="">Góp ý </a>
+              <a class="btn btn-link" href="">Trao đổi </a>
+              <a class="btn btn-link" href="">Dịch vụ</a>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <h5 class="text-white mb-4">Thu thập sticker đổi ngay voucher </h5>
+              <div class="row g-2">
+                  <div class="col-4">
+                      <img class="img-fluid" src="image/sticker voucher/apple-pie.png"Image">
+                  </div>
+                  <div class="col-4">
+                      <img class="img-fluid" src="image/sticker voucher/pancake.png" alt="Image">
+                  </div>
+                  <div class="col-4">
+                      <img class="img-fluid" src="image/sticker voucher/bread.png" alt="Image">
+                  </div>
+                  <div class="col-4">
+                      <img class="img-fluid" src="image/sticker voucher/cake.png" alt="Image">
+                  </div>
+                  <div class="col-4">
+                      <img class="img-fluid" src="image/sticker voucher/cupcake.png" alt="Image">
+                  </div>
+                  <div class="col-4">
+                      <img class="img-fluid" src="image/sticker voucher/pudding.png" alt="Image">
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <h5 class="text-white mb-4">Voucher liền tay </h5>
+              <p>Nhập ngay email của bạn để được ngay voucher </p>
+              <div class="position-relative  mt-3">
+                  <input class="form-control border-0 rounded-pill  ps-4 pe-5" type="email" placeholder="Nhập email bạn tại đây" style="height: 48px;">
+                  <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"></button>
+              </div>
+          </div>
+      </div>
+      <div class="row border-top" style="margin-top: 20px;"><br>
+        <div class="col-md-12 text-center copyright"><span >Design by <a href="" class="text-center text-danger">Thanh Phát </a> & <a href="" class="text-danger">Minh Thông</a></span></div>
+      </div> 
+</footer>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>

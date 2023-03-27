@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/thanhtoan.css">
+    <link rel="icon" href="image/logo-title.png" type="imge/x-icon"/>
+    <title>Tiệm bánh bất ổn </title></head>
+<body>
+    <h1>Thanh toán online</h1>
+		<div class="tab_container">
+
+			<input id="tab4" type="radio" name="tabs" checked>
+			<label for="tab4"><span class="numberCircle">1</span><span>Thanh toán </span></label>
+
+			<section id="content4" class="tab-content">
+				<h4 class="payment-title text-primary">Chọn hình thức thanh toán </h4>
+		      	<form action="" method="post">
+      <div class="pymt-radio">
+      
+      
+    <div class="row-payment-method payment-row">
+      <div class="select-icon">
+        <input type="radio" id="radio1" name="radios" value="pp">
+        <label for="radio1"></label>
+      </div>
+      <div class="select-txt">
+        <p class="pymt-type-name">Thanh toán Paypal</p>
+        <p class="pymt-type-desc">Chúng tôi mang đến cho bạn giải pháp chấp nhận thanh toán siêu nhanh, siêu dễ, dù là trên trang web, nền tảng chợ trực tuyến hay qua email.</p>
+      </div>
+      <div class="select-logo">
+        <img src="image/logo-paypal.png" alt="PayPal"/>
+      </div>
+      
+    </div>
+      
+      </div>
+      
+
+
+      <div class="pymt-radio">
+      
+    <div class="row-payment-method payment-row-last border-bottom-red">
+      <div class="select-icon ">
+        <input type="radio" id="radio2" name="radios" value="pp1" >
+        <label for="radio2"></label>
+      </div>
+      <div class="select-txt ">
+        <p class="pymt-type-name">Thanh toán Visa</p>
+        <p class="pymt-type-desc">Đảm bảo an toàn thanh toán online dành cho bạn </p>
+      </div>
+      <div class="select-logo">
+        <div class="select-logo-sub logo-spacer">
+          <img src="image/logo-visa.png" alt="Visa"/>
+        </div>
+      
+      </div>
+      </div>
+      
+      <div class="pymt-radio">
+      
+        <div class="row-payment-method payment-row-last">
+          <div class="select-icon ">
+            <input type="radio" id="radio3" name="radios" value="pp2" >
+            <label for="radio3"></label>
+          </div>
+          <div class="select-txt ">
+            <p class="pymt-type-name">Thanh toán MasterCard</p>
+            <p class="pymt-type-desc">Hiện nay thẻ Mastercard đã có mặt ở hơn 210 quốc gia và vùng lãnh thổ, ra nước ngoài bạn không phải đổi tiền trước</p>
+          </div>
+          <div class="select-logo">
+         
+            <div class="select-logo-sub">
+            <img src="https://www.dropbox.com/s/6f5dorw54xomw7p/logo-mastercard.png?raw=1" alt="MasterCard"/></div>
+          </div>
+          
+          </div>
+          </div>
+          
+      <div class="pymt-radio">
+      
+        <div class="row-payment-method payment-row-last">
+          <div class="select-icon ">
+            <input type="radio" id="radio4" name="radios" value="pp3" >
+            <label for="radio4"></label>
+          </div>
+          <div class="select-txt ">
+            <p class="pymt-type-name">Thanh toán logo-vietcombank</p>
+            <p class="pymt-type-desc">Vietcombank hiện đang triển khai nhiều hoạt động kinh doanh trên đa dạng các lĩnh vực đối với khách hàng cá nhân và khách hàng doanh nghiệp</p>
+          </div>
+          <div class="select-logo">
+            <div class="select-logo-sub">
+            <img src="image/logo-vietcombank.ico" style="width: 100px;" alt="MasterCard"/></div>
+          </div>
+          
+          </div>
+          </div>  
+            
+          <div class="container-fluid">
+            <div class="row">
+                <form action="">
+                <div class="col-md-12 chi">
+                    <label for="">Số thẻ  của bạn</label>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                          
+          <input type="text" class="input cc-txt form-check-input form-range" placeholder="nhập số ở đây xxxx xxxx xxxx xxxx" required maxlength="19" pattern="[0-9]{19}" title="Vui lòng nhập đúng định dạng thẻ"/>   
+            
+                    </div>
+                </div>
+            
+            </div>
+          </div>
+    </div>
+    <div class="button-master-container">
+      <div class="button-container">
+        <i><img src="image/arrow-return-left.svg" alt=""></i> <a href="giohang.html"> Kiểm tra lại hóa đơn</a>
+      </div>    
+      <div class="button-container button-finish"> <button class="btn btn-success" type="submit" onclick="dieu_huong()">Thanh toán ngay</button>
+        
+      </div>
+    </div>
+    </form>
+    
+			</section>
+		</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/success.js"></script>
+</body>
+</html>
